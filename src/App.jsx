@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import navImg from "./assets/logo.png";
+import dollarImg from "./assets/DoubleDollar.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="navbar max-w-11/12 mx-auto">
+        <div className="flex-1">
+          <a className=" text-xl">
+            <img className="w-[70px] h-[70px]" src={navImg} alt="" />
+          </a>
+        </div>
+        <div className="flex items-center">
+          <span>6000000000</span>
+          <span className="mx-1">Coin</span>
+          <img src={dollarImg} alt="" />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
