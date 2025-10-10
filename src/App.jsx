@@ -10,15 +10,16 @@ const fetchPlayers = async () => {
   return res.json();
 };
 
+const playersPromise = fetchPlayers();
+
 function App() {
   const [toggle, setToggle] = useState(true);
-
-  const playersPromise = fetchPlayers();
+  const [availableBalance, setAvailableBalance] = useState(1000000);
 
   return (
     <>
       {/* Navbar Component */}
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
       <div className="border-2 border-red-500 max-w-11/12 mx-auto flex justify-between items-center">
         <h1
           className="font-bold
@@ -51,7 +52,11 @@ function App() {
         <Suspense
           fallback={<span className="loading loading-dots loading-xl"></span>}
         >
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+            playersPromise={playersPromise}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         // Selected Players Component
