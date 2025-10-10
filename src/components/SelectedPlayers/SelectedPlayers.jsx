@@ -1,7 +1,11 @@
 import React from "react";
 
 const SelectedPlayers = () => {
-  return <div></div>;
+  return (
+    <div className="max-w-11/12 mx-auto">
+      <h2>Hello</h2>
+    </div>
+  );
 };
 
 export default SelectedPlayers;
