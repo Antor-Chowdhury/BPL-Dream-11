@@ -24,7 +24,7 @@ function App() {
     <>
       {/* Navbar Component */}
       <Navbar availableBalance={availableBalance}></Navbar>
-      <div className="border-2 border-red-500 max-w-11/12 mx-auto flex justify-between items-center">
+      <div className=" max-w-11/12 mx-auto flex justify-between items-center">
         <h1
           className="font-bold
          text-2xl"
