@@ -5,6 +5,9 @@ import AvailablePlayers from "./components/AvaiablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 
+// importing Toast
+import { ToastContainer } from "react-toastify";
+
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
   return res.json();
@@ -83,6 +86,9 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
+
+      {/* Calling the Toast Container */}
+      <ToastContainer />
     </>
   );
 }
