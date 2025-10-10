@@ -20,6 +20,16 @@ function App() {
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   // console.log(purchasedPlayers);
 
+  const removePlayer = (p) => {
+    const filteredData = purchasedPlayers.filter(
+      (ply) => ply.playerName !== p.playerName
+    );
+    setPurchasedPlayers(filteredData);
+    setAvailableBalance(
+      availableBalance + parseInt(p.price.split(",").join(""))
+    );
+  };
+
   return (
     <>
       {/* Navbar Component */}
@@ -29,7 +39,9 @@ function App() {
           className="font-bold
          text-2xl"
         >
-          Available Players
+          {toggle === true
+            ? "Available Players"
+            : `Selected Player (${purchasedPlayers.length}/6)`}
         </h1>
 
         <div className="font-bold">
@@ -47,7 +59,7 @@ function App() {
               toggle === false ? "bg-[#E7FE29]" : ""
             }`}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchasedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -66,7 +78,10 @@ function App() {
         </Suspense>
       ) : (
         // Selected Players Component
-        <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
     </>
   );
