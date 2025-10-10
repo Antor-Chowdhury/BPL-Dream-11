@@ -7,7 +7,7 @@
     "rating": 9.5,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Slow left-arm orthodox",
-    "price": "$200,000"
+    "price": "200,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/GQGzKnH2/mushfiqur.jpg",
@@ -17,7 +17,7 @@
     "rating": 8.8,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": null,
-    "price": "$150,000"
+    "price": "150,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/6cPMfwZF/mustafizur.jpg",
@@ -27,7 +27,7 @@
     "rating": 8.9,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Left-arm fast-medium",
-    "price": "$180,000"
+    "price": "180,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/N2K7TWwn/rashid-khan.webp",
@@ -37,7 +37,7 @@
     "rating": 9.3,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Legbreak googly",
-    "price": "$210,000"
+    "price": "210,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/WvJhgvJD/Andre-russel.jpg",
@@ -47,7 +47,7 @@
     "rating": 9.2,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm fast",
-    "price": "$220,000"
+    "price": "220,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/nMdmQ5mL/kieron-pollard.jpg",
@@ -57,7 +57,7 @@
     "rating": 9.0,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm medium-fast",
-    "price": "$200,000"
+    "price": "200,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/dJWJXqP9/david-warner.jpg",
@@ -66,8 +66,8 @@
     "playerRole": "Batsman",
     "rating": 9.1,
     "battingStyle": "Left-hand bat",
-    "bowlingStyle": null,
-    "price": "$230,000"
+    "bowlingStyle":  "Right-arm medium",
+    "price": "230,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/hxv2Tdnm/ab-de-villiers.jpg",
@@ -76,8 +76,8 @@
     "playerRole": "Batsman",
     "rating": 9.4,
     "battingStyle": "Right-hand bat",
-    "bowlingStyle": null,
-    "price": "$250,000"
+    "bowlingStyle":  "Right-arm medium",
+    "price": "250,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/bgjDnvvg/mahmudullah-riyad.jpg",
@@ -87,7 +87,7 @@
     "rating": 8.4,
     "battingStyle": "Right-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": "$140,000"
+    "price": "140,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/tpqGxPXT/eoin-morgan.jpg",
@@ -96,8 +96,8 @@
     "playerRole": "Batsman",
     "rating": 8.7,
     "battingStyle": "Left-hand bat",
-    "bowlingStyle": null,
-    "price": "$170,000"
+    "bowlingStyle":  "Right-arm medium",
+    "price": "170,000"
   },
   {
     "playerImg": "https://i.ibb.co.com/21TYChRY/chris-gayle.jpg",
@@ -107,7 +107,7 @@
     "rating": 9.2,
     "battingStyle": "Left-hand bat",
     "bowlingStyle": "Right-arm offbreak",
-    "price": "$240,000"
+    "price": "240,000"
   },
 {
   "playerImg": "https://i.ibb.co.com/pBfpPfzf/virat-kojili.jpg",
@@ -117,6 +117,6 @@
   "rating": 9.6,
   "battingStyle": "Right-hand bat",
   "bowlingStyle": "Right-arm medium",
-  "price": "$300,000"
+  "price": "300,000"
 }
 ]
